@@ -1,0 +1,14 @@
+﻿
+<div class="col-md-6 col-md-offset-3">
+    <h3>Hi {{currentUser.firstName}}!</h3>
+
+ <p>Personal Information:</p>
+ <div class="well">
+<span class="sp">Name : </span>{{currentUser.firstName}}<br>
+<span class="sp">Last Name : </span>{{currentUser.lastName}}<br>
+<span class="sp">Password : </span>{{user.password}}<br>
+</div>
+<hr>
+
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
