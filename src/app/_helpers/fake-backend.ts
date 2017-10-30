@@ -19,7 +19,7 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
                 let filteredUsers = users.filter(user => {
                     return user.username === params.username && user.password === params.password;
                 });
-                console.log(filteredUsers);
+                
                 if (filteredUsers.length) {
                     // if login details are valid return 200 OK with user details and fake jwt token
                     let user = filteredUsers[0];

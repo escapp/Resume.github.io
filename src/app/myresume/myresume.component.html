@@ -1,0 +1,134 @@
+
+<div class="container"><br><br>
+	<div class="row">
+		<div class="col-sm-6 text-center"><span id="rmPre">Data Feed Down Below</span>
+			<br>
+<table class="table table-bordered">
+<tr>
+<td>Name</td>
+<td><input [value]= 'name' (input)='name=$event.target.value'/></td>
+</tr>
+<tr>
+<td>mobile</td>
+<td><input [value]= 'mobile' (input)='mobile=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Email-id</td>
+<td><input [value]= 'email' (input)='email=$event.target.value'/></td>
+</tr>
+<tr>
+<td>College </td>
+<td><input [value]= 'clg' (input)='clg=$event.target.value'/></td>
+</tr>
+<tr>
+<td>University</td>
+<td><input [value]= 'univ' (input)='univ=$event.target.value'/></td>
+</tr>
+<tr>
+<td>10th School</td>
+<td><input [value]= 'tenSc' (input)='tenSc=$event.target.value'/></td>
+</tr><tr>
+<td>10th %</td>
+<td><input [value]= 'tenPr' (input)='tenPr=$event.target.value'/></td>
+</tr>
+<tr>
+<td>12th School</td>
+<td><input [value]= 'ssc' (input)='ssc=$event.target.value'/></td>
+</tr>
+<tr>
+<td>12th %</td>
+<td><input [value]= 'sscPr' (input)='sscPr=$event.target.value'/></td>
+</tr>
+
+<tr>
+<td>Technical Skills 1</td>
+<td><input [value]= 'tech1' (input)='tech1=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Technical Skills 2</td>
+<td><input [value]= 'tech2' (input)='tech2=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Worked on : 1</td>
+<td><input [value]= 'worked1' (input)='worked1=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Worked on : 2</td>
+<td><input [value]= 'worked2' (input)='worked2=$event.target.value'/></td>
+</tr>
+<tr>
+<td>training</td>
+<td><input [value]= 'training' (input)='training=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Extra activities</td>
+<td><input [value]= 'extra' (input)='extra=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><input [value]= 'address' (input)='address=$event.target.value'/></td>
+</tr>
+<tr>
+<td>Date</td>
+<td><input [value]= 'date' (input)='date=$event.target.value'/></td>
+</tr>
+
+
+</table>
+
+		</div>
+
+
+		<!-- Right Column starts here-->
+
+		<div class="col-md-6">
+			<span id="rmPre">Resume Preview</span>
+
+			<br>
+			<div class="container">
+			<div id="mn">
+					<div class="row">
+					<div class="col-sm-9"></div>
+					<div class="col-sm-3">
+						<span id="nam">{{name}}</span><br>
+						<span id="mb">{{mobile}}</span><br>
+						<span id="mb">{{email}}</span>
+
+					</div>
+
+					</div><br>
+					<hr><span id="hedd">Objective :</span><hr>
+					<p>To utilize my skills and ability in the industry that offers a platform to learn as well as professional growth while being resourceful and innovative</p>
+					<hr><span id="hedd">Academic Record :</span><hr>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA;Pursued Bachelor of Engineering from {{clg}} affiliated to {{univ}} with specialization in Computer Science Engineering (2013-2017)</p>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; 12th from {{ssc}} with {{sscPr}} in the year 2013</p>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; 10th from {{tenSc}} with {{tenPr}} in the year 2011</p>
+
+					<hr><span id="hedd">Technical Skills :</span><hr>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; {{tech1}}</p>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; Others : {{tech2}}</p>
+
+					<hr><span id="hedd">Worked on:</span><hr>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; {{worked1}}</p>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; {{worked2}}</p>
+
+					<hr><span id="hedd">Training & Certifications Undergone:</span><hr>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; {{training}}</p>
+
+					<hr><span id="hedd">Extra/Co-Curriculum Activities:</span><hr>
+					<p>&nbsp;&nbsp;&nbsp;&#x25BA; {{extra}}</p>
+
+					<hr><span id="hedd">Declaration:</span><hr>
+					<p>I hereby declare that the information furnished above is true to the best of my knowledge.</p>
+					<div class="row">
+						<div class="col-sm-3"><span id="hedd">Place : {{address}}</span></div>
+						<div class="col-sm-6"></div>
+						<div class="col-sm-3"><span id="rtAln"> {{name}}</span></div>
+					</div><br>
+					<span id="hedd">Date : {{date}}</span>
+			</div>
+		</div>
+		<div>
+
+	<div>
+</div>

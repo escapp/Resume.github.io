@@ -1,14 +1,16 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AlertService, UserService } from '../_services/index';
+import { AlertService, UserService } from '../../_services/index';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'register.component.html'
+    selector: 'app-register-p',
+    templateUrl: 'register-p.component.html',
+    styleUrls: ['register-p.component.css']
 })
 
-export class RegisterComponent {
+export class RegisterPComponent {
     model: any = {};
     loading = false;
 
@@ -23,7 +25,7 @@ export class RegisterComponent {
             .subscribe(
                 data => {
                     this.alertService.success('Registration successful', true);
-                    this.router.navigate(['/login']);
+                    this.router.navigate(['/loginp']);
                 },
                 error => {
                     this.alertService.error(error);

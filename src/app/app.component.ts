@@ -1,13 +1,19 @@
-﻿import { Component } from '@angular/core';
+﻿
+import { Component, TemplateRef } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/modal-options.class';
 
 @Component({
-    moduleId: module.id,
-    selector: 'app',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css']
+  selector: 'app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
+export class AppComponent {
+  title = '';
+  public modalRef: BsModalRef;
+  constructor(private modalService: BsModalService) {}
 
-export class AppComponent { 
-  title = 'My Page';
-  header = 'BJS Resume';
+  public openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+  }
 }

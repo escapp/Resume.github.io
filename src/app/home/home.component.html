@@ -4,11 +4,11 @@
 
  <p>Personal Information:</p>
  <div class="well">
-<span class="sp">Name : </span>{{currentUser.firstName}}<br>
-<span class="sp">Last Name : </span>{{currentUser.lastName}}<br>
-<span class="sp">Password : </span>{{user.password}}<br>
+<span class="sp">Name : </span>{{currentUser.firstName}}<br><br>
+<span class="sp">Last Name : </span>{{currentUser.lastName}}<br><br>
+
 </div>
 <hr>
-
-    <p><a [routerLink]="['/login']">Logout</a></p>
+<button type="button" class="btn btn-primary"><a routerLink="/myresume">My Resume</a></button>
+<button type="button" class="btn btn-danger"><a routerLink="/loginp">Logout</a></button>    
 </div>

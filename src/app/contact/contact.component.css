@@ -1,0 +1,6 @@
+.nav-tabs .nav-link:hover {
+background-color: #FFFFFF !important;
+}
+.nav-tabs .nav-link:hover a {
+text-decoration: none;
+}

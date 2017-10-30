@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers/index';
@@ -16,11 +19,10 @@ import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 import { HomeComponent } from './home/index';
-import { LoginComponent } from './login/index';
-import { RegisterComponent } from './register/index';
-import { FooterComponent } from './footer/footer.component';
-import { TotalusersComponent } from './totalusers/totalusers.component';
-import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { MyresumeComponent } from './myresume/myresume.component';
+import { LoginPComponent } from './public/login-p/index';
+import { RegisterPComponent } from './public/register-p/index';
 
 @NgModule({
     imports: [
@@ -28,23 +30,19 @@ import { AboutComponent } from './about/about.component';
         FormsModule,
         HttpModule,
         routing,
-        RouterModule.forRoot([
-            { 
-                path: 'users',
-                component:TotalusersComponent 
-            }
-        ])
+        NgbModule.forRoot(),
+        BsDropdownModule.forRoot(),
+        ModalModule.forRoot(),
   
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         HomeComponent,
-        LoginComponent,
-        RegisterComponent,
-        FooterComponent,
-        TotalusersComponent,
-        AboutComponent
+        ContactComponent,
+        MyresumeComponent,
+        LoginPComponent,
+        RegisterPComponent
     
     ],
     providers: [
