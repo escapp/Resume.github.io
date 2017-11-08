@@ -1,6 +1,6 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/index';
+import { HomeComponent } from './secure/home/index';
 import { AuthGuard } from './_guards/index';
 import { ContactComponent } from './contact/contact.component';
 import { MyresumeComponent } from './myresume/myresume.component';
@@ -12,9 +12,7 @@ const appRoutes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'loginp', component: LoginPComponent},
     { path: 'registerp', component: RegisterPComponent},
-    
-
- 	{ path: 'myresume', component: MyresumeComponent,canActivate: [AuthGuard] },
+ 	{ path: 'myresume', component: MyresumeComponent},
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

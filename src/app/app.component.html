@@ -1,11 +1,25 @@
 ﻿
 <div id="hd">
-<button type="button" class="btn btn-primary" (click)="openModal(template)">Login</button>
-<button type="button" class="btn btn-warning" (click)="openModal(templates)">Register</button>
+	<div class="row">
+
+		<div class="col-sm-6" align="left">
+<img src="./assets/images/new-log.png" class="imgh">
+</div>
+
+		<div class="col-sm-6">
+			<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal from home to 
+			</button>-->
+			<button type="button" class="btn btn-primary" (click)="openModal(template)">Login</button>
+			<button type="button" class="btn btn-warning" (click)="openModal(templates)">Register</button>
+		</div>
+
+
+	</div>
 </div>
 
 <ng-template #template>
-    <app-login-p></app-login-p>  
+    <app-login-p></app-login-p>
 </ng-template>
 
 <ng-template #templates>

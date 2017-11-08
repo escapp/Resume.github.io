@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
+
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers/index';
 import { MockBackend, MockConnection } from '@angular/http/testing';
@@ -18,11 +19,12 @@ import { routing }        from './app.routing';
 import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
-import { HomeComponent } from './home/index';
+import { HomeComponent } from './secure/home/index';
 import { ContactComponent } from './contact/contact.component';
 import { MyresumeComponent } from './myresume/myresume.component';
 import { LoginPComponent } from './public/login-p/index';
 import { RegisterPComponent } from './public/register-p/index';
+
 
 @NgModule({
     imports: [
