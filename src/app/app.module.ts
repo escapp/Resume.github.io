@@ -24,7 +24,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MyresumeComponent } from './myresume/myresume.component';
 import { LoginPComponent } from './public/login-p/index';
 import { RegisterPComponent } from './public/register-p/index';
-
+import { LandingComponent } from './public/landing/index';
 
 @NgModule({
     imports: [
@@ -44,7 +44,8 @@ import { RegisterPComponent } from './public/register-p/index';
         ContactComponent,
         MyresumeComponent,
         LoginPComponent,
-        RegisterPComponent
+        RegisterPComponent,
+        LandingComponent
     
     ],
     providers: [
