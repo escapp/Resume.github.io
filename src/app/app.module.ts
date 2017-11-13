@@ -20,8 +20,6 @@ import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 import { HomeComponent } from './secure/home/index';
-import { ContactComponent } from './contact/contact.component';
-import { MyresumeComponent } from './myresume/myresume.component';
 import { LoginPComponent } from './public/login-p/index';
 import { RegisterPComponent } from './public/register-p/index';
 import { LandingComponent } from './public/landing/index';
@@ -41,8 +39,6 @@ import { LandingComponent } from './public/landing/index';
         AppComponent,
         AlertComponent,
         HomeComponent,
-        ContactComponent,
-        MyresumeComponent,
         LoginPComponent,
         RegisterPComponent,
         LandingComponent

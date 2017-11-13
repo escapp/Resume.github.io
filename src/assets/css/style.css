@@ -162,9 +162,9 @@ h5 {
   font-size: 12px;
 }
 .nav-header {
-  padding: 33px 25px;
+  padding: 33px 75px;
   background-color: #2f4050;
-  background-image: url("patterns/header-profile.png");
+  background-image: url("assets/css/patterns/header-profile.png");
 }
 .pace-done .nav-header {
   transition: all 0.4s;
@@ -410,7 +410,7 @@ body.mini-navbar .nav-header {
   background-color: #1ab394;
 }
 body.canvas-menu .nav-header {
-  padding: 33px 25px;
+  padding: 33px 75px;
 }
 body.mini-navbar #page-wrapper {
   margin: 0 0 0 70px;
@@ -6962,10 +6962,10 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background: url('../img/landing/header_one.jpg') 50% 0 no-repeat;
+  background: url('assets/img/landing/header_one.jpg') 50% 0 no-repeat;
 }
 .landing-page .header-back.two {
-  background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
+  background: url('assets/img/landing/header_two.jpg') 50% 0 no-repeat;
 }
 .landing-page .carousel {
   height: 470px;
@@ -7167,7 +7167,7 @@ body.landing-page {
   padding-top: 80px;
   padding-bottom: 90px;
   background-color: #1ab394;
-  background-image: url('../img/landing/avatar_all.png');
+  background-image: url('assets/img/landing/avatar_all.png');
 }
 .landing-page .big-icon {
   font-size: 56px !important;
@@ -7176,7 +7176,7 @@ body.landing-page {
   color: #1ab394 !important;
 }
 .landing-page .contact {
-  background-image: url('../img/landing/word_map.png');
+  background-image: url('assets/img/landing/word_map.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-top: 60px;
@@ -7679,14 +7679,14 @@ body.rtls.top-navigation .footer.fixed {
 }
 .blue-skin {
   font-weight: 600;
-  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
+  background: url("assets/css/patterns/header-profile-skin-1.png") repeat scroll 0 0;
 }
 .blue-skin:hover {
   background: #0d8ddb;
 }
 .yellow-skin {
   font-weight: 600;
-  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
+  background: url("assets/css/patterns/header-profile-skin-3.png") repeat scroll 0 100%;
 }
 .yellow-skin:hover {
   background: #ce8735;
@@ -7694,10 +7694,10 @@ body.rtls.top-navigation .footer.fixed {
 .ultra-skin {
   padding: 20px 10px;
   font-weight: 600;
-  background: url("patterns/3.png") repeat scroll 0 0;
+  background: url("assets/css/patterns/3.png") repeat scroll 0 0;
 }
 .ultra-skin:hover {
-  background: url("patterns/4.png") repeat scroll 0 0;
+  background: url("assets/css/patterns/4.png") repeat scroll 0 0;
 }
 
 @media (min-width: 768px) {
